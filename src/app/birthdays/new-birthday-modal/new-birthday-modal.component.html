@@ -1,0 +1,33 @@
+<div class="ion-page">
+  <form #newBirthdayForm="ngForm">
+    <ion-input
+      type="text"
+      name="birthdayFormName"
+      [(ngModel)]="birthdayFormName"
+      placeholder="Name"
+    ></ion-input>
+    <ion-datetime
+      presentation="date"
+      name="birthdayFormDate"
+      [(ngModel)]="birthdayFormDate"
+    ></ion-datetime>
+    <ion-input
+      type="text"
+      name="birthdayFormNotes"
+      [(ngModel)]="birthdayFormNotes"
+      placeholder="Additional notes?"
+    ></ion-input>
+  </form>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="modalController.dismiss()" color="light"
+          >Cancel</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="createNewBirthday()">Track!</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
