@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import { Birthday } from './birthdays/birthday.model';
 import { GlobalStateService } from './global-state.service';
 
-const backendUrl = 'https://mighty-ocean-35456.herokuapp.com/'; // Switch to environmental variable
+const backendUrl = 'https://mighty-ocean-35456.herokuapp.com'; // Switch to environmental variable
 // const backendUrl = 'http://localhost:8080';
 const loggedInUserId = 1; // Temporary
 
