@@ -14,7 +14,6 @@ export class NewBirthdayModalComponent implements OnInit {
   birthdayFormNotes: string = '';
 
   constructor(
-    // private birthdayService: BirthdayService,
     private globalStateService: GlobalStateService,
     public modalController: ModalController
   ) {}
@@ -29,6 +28,7 @@ export class NewBirthdayModalComponent implements OnInit {
       const newBirthday: Birthday = {
         name: this.birthdayFormName,
         date: this.birthdayFormDate,
+        userId: 1, // Until backend is connected
       };
       if (this.birthdayFormNotes) {
         newBirthday.notes = this.birthdayFormNotes;

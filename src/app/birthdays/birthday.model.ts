@@ -3,5 +3,5 @@ export interface Birthday {
   name: string;
   date: string;
   notes?: string;
-  // deleted?: boolean;
+  userId: number;
 }
