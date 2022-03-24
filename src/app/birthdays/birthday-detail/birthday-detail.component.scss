@@ -1,0 +1,13 @@
+ion-card {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(255, 166, 65);
+  --ion-background-color: rgba(212, 163, 107, 0.952);
+}
+
+ion-card,
+ion-card-title,
+ion-card-header {
+  margin: auto;
+  color: rgb(11, 12, 44);
+}

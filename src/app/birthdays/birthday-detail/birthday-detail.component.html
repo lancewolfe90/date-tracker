@@ -1,10 +1,13 @@
-<p>This is the information for the following event:</p>
-<p>ID, date, name, and notes</p>
-<p>
-  {{ currentBirthday.id }}, {{ currentBirthday.date }},
-  {{ currentBirthday.name }}, and
-  {{ currentBirthday.notes }}
-</p>
-<p>{{ assembleMessageForNextOccurrence(currentBirthday.date) }}</p>
+<ion-card>
+  <ion-card-title>{{ currentBirthday.name }}</ion-card-title>
+  <ion-card-header>{{
+    currentBirthday.date | date: "longDate"
+  }}</ion-card-header>
+  <ion-card-content>
+    Notes: {{ currentBirthday.notes }}
+    <hr />
+    {{ assembleMessageForNextOccurrence(currentBirthday.date) }}
+  </ion-card-content>
+</ion-card>
 
 <ion-button (click)="navigateBack()">Back</ion-button>

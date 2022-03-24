@@ -1,0 +1,30 @@
+ion-header {
+  color: rgb(231, 231, 231);
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(5, 74, 153);
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  ion-header {
+    width: 75%;
+  }
+}
+
+ion-list {
+  border: solid 4px black;
+  // border-radius
+  overflow: scroll;
+  --ion-background-color: rgba(255, 166, 65, 0.5);
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  ion-button {
+    width: 50%;
+  }
+}
